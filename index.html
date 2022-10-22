@@ -1,0 +1,396 @@
+
+<!doctype HTML>
+<html lang="en">
+
+<head>
+	<title>Nerando Johnson</title>
+	<meta charset=utf-8>
+	<meta name="description" content="Nerando Johnson  web development portfolio.">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="noindex" />
+	<link href="./bare.min.css" rel="stylesheet">
+	<style>
+		section:not(:first-of-type) {
+			border-left: 2px solid rgba(163, 41, 41, 0.3);
+		}
+
+		@media(max-width: 50rem) {
+			section:not(:first-of-type) {
+				margin-left: 4px;
+				margin-right: 6px;
+			}
+		}
+
+		section:first-of-type {
+			padding: 1rem;
+			padding-top: 100px;
+		}
+
+		card>p,
+		card>h3 {
+			text-align: center
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		header>a{
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+		}
+
+
+		nav {
+			position: fixed;
+			width: 100%;
+			border-bottom: 0 !important;
+			box-shadow: 0 2px 10px -6px rgba(0, 0, 0, 0.4)
+		}
+
+		.image-wrapper {
+			text-align: center;
+			margin-bottom: 8px;
+			padding: 0;
+			border: 2px solid gainsboro;
+			max-height: 200px;
+			overflow: scroll;
+		}
+
+		form {
+			margin: 0 auto;
+			max-width: 400px;
+		}
+
+		.heading-inside-text,
+		p {
+			display: inline-block;
+			transform: scale(1) skewX(0) skewY(0);
+			transition: all .5s ease-out;
+		}
+
+		.will-shrink {
+			transform: scale(0) skewX(20deg) skewY(10deg);
+			transform-origin: 0 -50%;
+			opacity: 0.0;
+			transition: all 1s ease-out;
+		}
+
+		.will-show {
+			opacity: 1;
+			transition: all .5s ease-in-out;
+			transition-delay: .2s;
+			pointer-events: all;
+		}
+
+		header>a {
+			opacity: 0;
+			color: #2D3539;
+			transition: all .5s ease-in-out;
+			text-transform: none;
+			pointer-events: none;
+		}
+
+		input,
+		textarea {
+			box-shadow: 0 0 0 1px rgba(22, 93, 14, 0.5)
+		}
+
+		.external-link-icon {
+			height: 1em;
+		}
+
+		a {
+			font-weight: bold
+		}
+
+		.visually-hidden { 
+			position: absolute !important;
+			height: 1px; 
+			width: 1px;
+			overflow: hidden;
+			clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+			white-space: nowrap; /* added line */
+	}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<label>
+			<span class="visually-hidden">Menu</span>
+			<input type="checkbox" name="nav-trigger">
+			<header>
+				<a href="#">
+					Nerando Johnson</a>
+			</header>
+			<ul>
+				<li>
+					<a nav href="#skills">Skills</a>
+				</li>
+				<li>
+					<a nav href="#projects">Projects</a>
+				</li>
+				<li>
+					<a nav href="#confs">Talks</a>
+				</li>
+				<li>
+					<a nav href="#bio">Bio</a>
+				</li>
+				<li>
+					<a nav href="#contact">Contact</a>
+				</li>
+			</ul>
+		</label>
+	</nav>
+
+	<main>
+		<section>
+			<br>
+			<br>
+			<h1>
+				<span class="heading-inside-text">Nerando Johnson</span>
+			</h1>
+
+			<p fs="l">A fullstack trained developer from Jamaica, now based in Atlanta, Georgia.
+			</p>
+		</section>
+		<hr id="skills">
+		<section>
+			<h2>Skills</h2>
+
+			<span fs="l">
+				<b>Front End</b>: HTML, CSS, JavaScript, React, React Native, Responsive Design, Accessibility, AEM Components</span>
+			<ul ma="0">
+				<li>Have created websites and single-page apps with (and without) external libraries/frameworks</li>
+				<li> development on several client projects in  and plain JS, HTML and Sass/CSS</li>
+				<li>Have published a small open source helper library for rendering HTML from JavaScript objects</li>
+			</ul>
+			<div>
+				<span fs="l">
+					<b>Back End</b>: Firebase (Auth, Database, Cloud Functions), Ruby-on-Rails, Node</span>
+				<ul ma="0">
+					<li>Have used Firebase for authentication and database.</li>
+					<li>Mostly used Node in context of cloud functions to manage link between Firebase and Google Sheets API</li>
+					<li>Rhino (JS reimplemented in Java) used in AEM context to create backend functionality for AEM components - querying JCR nodes, prepare data for clientside use, etc.</li>
+				</ul>
+			</div>
+			<div>
+				<span fs="l">
+					<b>Tools</b>: Git, GitHub, NPM, Parcel, Netlify, Cypress
+				</span>
+				<ul ma="0">
+					<li>I run some projects with multiple contributors on GitHub and have helped on-board newcomers to civic hacking and professional work projects</li>
+					<li>At work I have driven adoption of Cypress for functional tests of complicated interactive components and forms</li>
+				</ul>
+			</div>
+			<div>
+				<span fs="l">
+					<b>Other Skills</b>: Communication, teaching, presenting, leadership, community involvement</span>
+				<ul ma="0">
+					<li>One of the current co-organizer at FreeCodeCamp Atlanta. </li>
+					<li>Participated as a team member in  a project that began at a hackathon to win first prize and $40,000 at AT&T's Civic Coding Challenge one year later.
+					</li>
+					<li>Have given talks at meetups and conferences, and published articles online on job hunting, mentoring and accessibility topics.</li>
+				</ul>
+			</div>
+		</section>
+		<hr id="projects">
+		<section>
+			<h2>Projects</h2>
+
+			<grid>
+				<div col="1/2">
+					<card>
+						<h3>
+							Folkmusic.com
+						</h3>
+						<div class="image-wrapper">
+							<img src="./images/folkMusicScrnSht.png" alt="Screenshot  of Folkmusic.com">
+						</div>
+						<p>A website for GRAMMY-nominated folksinger John McCutcheon.
+							<a href="https://www.folkmusic.com" target="_new" rel="noopener">Visit Website</a>
+							<img src="./images/external-link.svg" class="external-link-icon" alt="">
+						</p>
+						<br>
+						<b>My contribution:</b>
+						<ul ma="0" fs="s">
+							<li>Updated variables to ES6.</li>
+							<li>Fixed bugs (JS, HTML).</li>
+							<li>Implemented a new feature (auto loaded all songs).</li>
+						</ul>
+					</card>
+				</div>
+
+				<div col="1/2">
+					<card>
+						<h3>Free Live Transcript</h3>
+						<div class="image-wrapper">
+							<img src="./images/freeLiveTranscript.png" alt="Screenshot of freelivetranscript.com">
+						</div>
+						<p>Real-time, editable speech transcript (open source project)
+							<a href="https://www.freelivetranscript.com" target="_new" rel="noopener">Visit Website</a>
+							<img src="./images/external-link.svg" class="external-link-icon" alt="">
+						</p>
+						<b>My contribution:</b>
+						<ul ma="0" fs="s">
+							<li>First Project manager & developer.</li>
+							<li>Helped to built out prototype with all basic functionality (JS, HTML, CSS, Firebase, Web Speech Recognition API).</li>
+						</ul>
+					</card>
+				</div>
+
+				<div col="1/2">
+					<card>
+						<h3>Paratransit Pal</h3>
+						<div class="image-wrapper">
+							<img src="./images/ParatransitPalScrnShot.png" alt="">
+						</div>
+						<p>Web app for to better accommodate paratransit customers (team project).
+							<a href="https://paratransitpal.carrd.co/" target="_new" rel="noopener">Visit Website</a>
+							<img src="./images/external-link.svg" class="external-link-icon" alt="">
+						</p>
+						<br>
+
+						<b>My contribution:</b>
+						<ul ma="0" fs="s">
+							<li>Project manager & front-end developer.</li>
+							<li>Contributed to many areas of the front-end (JS, HTML, CSS).</li>
+							<li>Researched, ideated and developed our group pitch at AT&Ts Civic Coding Challenge.</li>
+							<li>Used my experience working as a former educator to inform the design, documentation, marketing and functionality of the app.</li>
+							<li>We donated our first-place prize of $40,000 to <a href="https://bit.ly/2qYfOaZ" target="_new" rel="noopener">nonprofits</a> helping people with disabilities or doing programming education.</li>
+						</ul>
+					</card>
+				</div>
+
+				<div col="1/2">
+					<card>
+						<h3>Mobility ETA</h3>
+						<div class="image-wrapper">
+							<img src="./images/MobilityEtaScrnsht.png" alt="Screenshot of Marta Mobility ETA">
+						</div>
+						<p>A standalone demo paratransit trip checker for MARTA Mobility Customers.
+							<a href="https://vigilant-saha-304915.netlify.com/" target="_new" rel="noopener">Visit Demo</a>
+							<img src="./images/external-link.svg" class="external-link-icon" alt="">
+						</p>
+						<b>My contribution:</b>
+						<ul ma="0" fs="s">
+							<li>Split this project out from Paratransit Pal to keep us interacting with (then available) live data and real paratransit customers while
+								Paratranist Pal was being developed.</li>
+							<li>Assisted  in the design, thus, improving the UI specifically to be useful for people with cognitive impairment or who are unfamiliar
+								with technology.</li>
+						</ul>
+					
+					</card>
+				</div>
+			</grid>
+			<br>
+			<Br>
+		</section>
+		<hr id="confs">
+		<section>
+			<h2>Talks and Articles</h2>
+			<h4>Talks</h4>
+					<ul>
+				<li><b>Open-Sourced - Growth Hacking Your Tech Skills</b> - Connect Tech, Atlanta, GA (Upcoming: Nov 2022)</li>
+				<li><b> Open-Sourced - Growth Hacking Your Tech Skills</b> - AJUG, Atlanta, GA (Oct 2022)</li>
+				<li><b>Open-Sourced - Growth Hacking Your Tech Skills</b> - Southern Dev Conference, Atlanta, GA (Sept 2022)</li>
+				<li><b>Open Sourced Learning - Growth Hacking Your Coding Skills In A Community</b> - Refactr.tech, Atlanta, GA (Sept 2022)</li>
+				<li><b>How !to be Mentored</b> - Magnoliajs 2022, Jackson, MS (September 2022)</li>
+			</ul>
+
+			<h4>Articles</h4>
+			<ul>
+			<li><b>Developer Networking Tools : A Brief IRL Edition</b> - Dev.to (Nov 2021) - <a href="https://dev.to/nerajno/6-strategies-learnt-from-6-months-of-job-hunting-14hn"  target="_blank" rel="noopener noreferrer">Read Article</a></li>
+			<li><b>6 Strategies Learned from 6 months of Job Hunting</b> - Dev.to (Sep 2021) - <a href="https://dev.to/nerajno/6-strategies-learnt-from-6-months-of-job-hunting-14hn"  target="_blank" rel="noopener noreferrer">Read Article</a></li>
+			<li><b>My Takeaways From Sit-Downs with Senior Devs</b> - Dev.to (Feb 2020) - <a href="https://dev.to/nerajno/my-takeaways-from-sit-downs-with-senior-devs-1c18"  target="_blank" rel="noopener noreferrer">Read Article</a></li>
+			<li><b>My #2Cents on How To Build A Beginner Friendly Developer Community</b> - Dev.to (Dec 2019) - <a href="https://dev.to/nerajno/my-2cents-on-how-to-build-a-beginner-friendly-developer-community-fk"  target="_blank" rel="noopener noreferrer">Read Article</a></li>
+			<li><b>Hackathons - A Junior Developer’s Growth Tool</b>  - Dev.to (Aug 2019) - <a href="https://dev.to/nerajno/hackathons-a-junior-developer-s-growth-tool-2d5k" target="_blank" rel="noopener noreferrer">Read Article</a></li>
+			<li><b>Sight beyond Sight... How Blind Software Engineers Make It Work</b> - Dev.to (Aug 2019) - <a href="https://dev.to/nerajno/sight-beyond-sight-how-blind-software-engineers-make-it-work-4lo0" target="_blank" rel="noopener noreferrer">Read Article</a></li>
+			<li>
+				<b>Writing The Needed ReadMe</b> - Dev.to (October 2019) - <a href="https://dev.to/nerajno/writing-the-needed-readme-36l2" target="_blank" rel="noopener noreferrer">Read Article</a>
+			</li>
+			</ul>
+			<h4>Podcast/ Talkshow Appearances</h4>
+			<ul>
+				<li><b>SomeAnticsDev</b> - 2022 - Discussing learning, community and mentorship with Ben Myers. <a href="https://www.twitch.tv/videos/1627941830" target="_blank" rel="noopener noreferrer">Watch</a> </li>
+				<li><b>Virtual Coffee </b> - 2021 - Discussing learning, bootcamp and life as a meetup organizer in Atlanta  - <a href="https://virtualcoffee.io/podcast/0207-nerando-johnson"  target="_blank" rel="noopener noreferrer">Listen</a> </li>
+				<li><b>CareerKarma</b> - 2021 - A workshop /interview on CareerKarma's live event session giving helpful tips to new developers.  - <a href="https://twitter.com/Career_Karma/status/1433203057156837379"  target="_blank" rel="noopener noreferrer">Link</a></li>
+				<li>
+					<b>CodePrep</b> - 2019 - My journey from coding as a hobby to being a trained fullstack developer from the Flatiron bootcamp. - <a href="https://www.codeprep.io/podcast/070/"  target="_blank" rel="noopener noreferrer">Listen</a>
+				</li>
+			</ul>
+
+		</section>
+		<hr id="bio">
+		<section>
+			<h2>Bio</h2>
+			<p>
+				I am currently the Front End Development Team Lead at NexTraq, a Michelin Company, leading a team of other developers working on the NexTraq fleet management web platform. The team does a combination of new feature development in a modern Vue SPA codebase, and maintenance/improvements to a legacy Java-driven front end. Over time, legacy features are migrated to the new codebase, preserving user workflows and adding functionality where possible.
+			</p>
+			<p>
+			    Previously I worked as a senior web developer at Content Thread's Atlanta office, doing a combination of Vue JS and Adobe Experience Manager (AEM) development for billion dollar companies.
+			</p>
+			<p>
+			    In both roles a large part of my job has involved hiring, onboarding and mentoring our newer developers, and working with multiple stakeholders to make sure we understand the work and are delivering the right solutions. Aside from front-end development, I've worked to help our QA and testing strategies to become more consistent and effective, and worn various other hats as needed.
+			</p>
+			<p>
+				Before Content Thread I worked as Program Developer at People Making Progress, managing programs that support adults with developmental disabilities
+				at home and in their jobs. At PMP I created internal web-based tools for our management team, and public-facing web pages
+				as needed. When I wasn not at PMP, I worked at Appalseed Productions as an office manager and the web developer for Folkmusic.com.
+			</p>
+			<p>
+				In 2018 I volunteered to become a co-organizer with Code for Atlanta (a Code for America Bridage), after starting a civic
+				hacking project with them at a the first MARTA hackathon in 2016. Through Code for Atlanta I ran "Intro to Coding" classes at DisabilityLINK's regular job skills meetings and co-ran the first <a href="http://www.tlabgametruck.com/behind-the-button/">Behind the Button</a> programs with TLab Game Truck, providing basic web development classes at two Atlanta Rec Centers.
+			</p>
+			<p>
+				Outside of development I have a lot of interest in music and writing. My BA is in English and Music, my MA is in Ethnomusicology,
+				and I spent some of my early twenties focused on writing and directing plays, publishing poems, and organizing various
+				concerts for my friends and I to play at around Dublin.
+			</p>
+
+		</section>
+		<hr id="contact">
+		<section>
+			<h2>
+				Contact
+			</h2>
+<center>
+    <!--<p>I'd love to talk with you about employment or speaking opportunities. My email address is below!</p><br><br>-->
+    <p>
+    <a href="mailto:iamnerandojohnson@gmail.com">iamnerandojohnson@gmail.com</a>
+    </p>
+</center>
+		</section>
+	</main>
+
+	<script>
+		let color = '#DF9FA2'
+		const sections = Array.from(document.querySelectorAll("section:not(:first-of-type)"));
+		const fancyElement = document.querySelector(".heading-inside-text");
+		const headerLink = document.querySelector("header > a");
+
+		// sets color based on scroll position
+		function setColor(scrollEvent) {
+			const scrollPosition = window.scrollY;
+			if (scrollPosition > 14) {
+				if (!fancyElement.classList.contains("will-shrink"))
+					fancyElement.classList.add("will-shrink")
+				headerLink.classList.add("will-show")
+			} else {
+				fancyElement.classList.remove("will-shrink")
+				headerLink.classList.remove("will-show")
+			}
+			color = `hsla(${(Math.floor(scrollPosition / 3 % 360)).toString().substr(0, 3)},30%,76%, 1)`
+			sections.forEach(heading => {
+				heading.style.borderLeftColor = color;
+			});
+
+			// sets the underline and bg of the links bare CSS styles nicely. Kind of brittle
+			document.styleSheets[0].rules[12].style.background = color;
+		}
+		window.addEventListener('scroll', setColor);
+	</script>
+</body>
+
+</html>
