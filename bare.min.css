@@ -1104,9 +1104,13 @@ body.dark {
 
 }
 
+.label, .label *{
+  box-sizing: border-box;
+}
+
 .label{
   cursor: pointer;
-	display: inline-block;
+	display: inline-flex;
 	align-items: center;
 	justify-content: space-between;
 	/* padding: 0.8rem 2rem 0.4rem; */
@@ -1116,7 +1120,7 @@ body.dark {
 	transform: scale(1.5);
   background-color: #111;
   border-radius: 25px;
-  padding-top: 4 px;
+  padding: 0;
 }
 
 .label .ball {
@@ -1125,8 +1129,8 @@ body.dark {
 	position: absolute;
 	top: 2px;
 	left: 2px;
-	height: 20px;
-	width: 20px;
+  aspect-ratio: 1;
+	height: 18px;
 	transform: translateX(0px);
 	transition: transform 0.2s linear;
 }
@@ -1137,12 +1141,12 @@ body.dark {
 }
 
 
-.fa-moon {
+.label .fa-moon {
 	color: #f1c40f;
 }
 
-.fa-sun {
-	color: #f39c12;  
+.label .fa-sun {
+	color: #f39c12;
 }
 
 /* CSS from the head of the page */
