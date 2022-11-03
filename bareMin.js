@@ -20,7 +20,8 @@ function setColor(scrollEvent) {
     sections.forEach(heading => {
         heading.style.borderLeftColor = color;
     });
-
+   
+    //TODO: Fix for this error message
     // sets the underline and bg of the links bare CSS styles nicely. Kind of brittle
     document.styleSheets[0].rules[12].style.background = color;
 }
