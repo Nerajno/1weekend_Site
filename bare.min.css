@@ -1116,11 +1116,19 @@ body.dark {
 	/* padding: 0.8rem 2rem 0.4rem; */
 	position: relative;
 	height: 20px;
-	width: 50px;
+	width: 40px;
 	transform: scale(1.5);
   background-color: #111;
   border-radius: 25px;
   padding: 0;
+}
+
+.label.dark{
+  background-color: rgb(26, 21, 21);
+}
+
+.label .ball .dark{
+  background-color: #111;
 }
 
 .label .ball {
@@ -1128,7 +1136,7 @@ body.dark {
 	border-radius: 50%;
 	position: absolute;
 	top: 2px;
-	left: 2px;
+	/* left: 2px; */
   aspect-ratio: 1;
 	height: 18px;
 	transform: translateX(0px);
