@@ -5,3 +5,6 @@ Florin pop toggle button
 - fix name animation
 - fix color of text  of cards in dark mode.
 
+# 1weekender
+
+#todos
