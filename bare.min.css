@@ -190,7 +190,7 @@ html {
     cursor: default;
   }
   card {
-    background: #fff;
+    /* background: #fff; */
     display: block;
     padding: 2rem;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
@@ -1097,13 +1097,13 @@ html {
   color: #fff;
 }
 
-/* card.dark {
+grid.dark {
   background: #0f0e0e;
   display: block;
   padding: 2rem;
   box-shadow: 0 1px 4px 0 rgb(223 213 213 / 92%);
   border-radius: 2px; 
-}*/
+}
 
 .checkbox{
   opacity: 0;
@@ -1161,12 +1161,12 @@ html {
   border-width: thin;
 }
 
-/* card.dark{
+#testDark.dark{
   background-color: #111;
   border-color: rgb(242, 239, 238);
   border-width: thin;
-} */
-
+  border-style: solid;
+}
 
 .label .fa-moon {
 	color: #f1c40f;
