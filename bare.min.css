@@ -16,8 +16,8 @@ html {
   body {
     color: #2e3538;
     margin: 0;
-    font-size: 1.4rem;
-    line-height: 1.8;
+    font-size: 1.5rem;
+    line-height: 1.9;
     font-weight: 300;
   }
   @media (max-width: 50rem) {
@@ -1284,3 +1284,4 @@ a {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap; /* added line */
 }
+
