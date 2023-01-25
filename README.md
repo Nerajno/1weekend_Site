@@ -1,10 +1,6 @@
-#
-Florin pop toggle button
-- resize toggle btn
-- switch color toggle button
-- fix name animation
-- fix color of text  of cards in dark mode.
+# 1Weekender_Site
+Updating my website using  a copy of [Mark's](markthomasnoonan.com) layout. 
 
-# 1weekender
-
-#todos
+#Todo
+-[ ] Add more projects. 
+-[ ] Make projects sortable by skills used.
