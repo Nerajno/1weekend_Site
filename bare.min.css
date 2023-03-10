@@ -1147,7 +1147,7 @@ grid.dark {
 	/* left: 2px; */
   /* bottom: 1.5px; */
   aspect-ratio: 1;
-	height: 18px;
+	height: 20px;
 	transform: translateX(0px);
 	transition: transform 0.2s linear;
   display: block;
@@ -1179,6 +1179,8 @@ grid.dark {
 /* testing for padding the checkbx */
 #chkn .ball .fas{
   display: block;
+  width: 20px;
+  height: 20px;
 }
 
 /* CSS from the head of the page */
@@ -1290,4 +1292,9 @@ a {
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+
+.ball {
+  width: 20px;
 }
