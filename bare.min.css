@@ -3,6 +3,7 @@ html {
     font-size: 12px; 
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;
+    
   }
   *,
   :after,
@@ -54,11 +55,11 @@ html {
   }
   ::-moz-selection {
     background-color: #679;
-    color: #fff;
+    color: #F0F0F0;
   }
   ::selection {
     background-color: #679;
-    color: #fff;
+    color: #F0F0F0;
   }
   a:not([class]),
   a[xx] {
@@ -103,7 +104,7 @@ html {
     color: #679;
     display: inline-block;
     padding: 1.4rem 2rem;
-    background: #fff;
+    background: #F0F0F0;
     border: 1px solid #679;
     border-radius: 2px;
     box-shadow: 0 0 0 transparent;
@@ -153,7 +154,7 @@ html {
   input[type="submit"][primary] {
     border-color: #5a6987;
     background: #679;
-    color: #fff;
+    color: #F0F0F0;
     font-weight: 700;
   }
   [btn][primary]:not(:disabled):hover,
@@ -190,7 +191,7 @@ html {
     cursor: default;
   }
   card {
-    /* background: #fff; */
+    /* background: #F0F0F0; */
     display: block;
     padding: 2rem;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
@@ -247,7 +248,7 @@ html {
     display: block;
   }
   footer {
-    color: #fff;
+    color: #F0F0F0;
     width: 100%;
     max-width: 90rem;
     margin: auto;
@@ -397,7 +398,7 @@ html {
     display: block;
     width: 100%;
     border: 1px solid #e3e6e8;
-    background: #fff
+    background: #F0F0F0
       url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cpath%20d%3D%22M14.83%2016.42L24%2025.59l9.17-9.17L36%2019.25l-12%2012-12-12z%22%2F%3E%3C%2Fsvg%3E)
       no-repeat right 1rem center;
     background-size: 2rem;
@@ -447,7 +448,7 @@ html {
     width: 2rem;
     height: 2rem;
     border: 1px solid #abb5ba;
-    background: #fff;
+    background: #F0F0F0;
     vertical-align: middle;
     margin-right: 1rem;
   }
@@ -486,7 +487,7 @@ html {
     opacity: 1;
     visibility: visible;
     background: #679;
-    border: 1px solid #fff;
+    border: 1px solid #F0F0F0;
     border-radius: 100%;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -503,7 +504,7 @@ html {
   }
   input[type="checkbox"]:not([class]) + label:after,
   input[type="checkbox"][xx] + label:after {
-    background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M9%2016.2L4.8%2012l-1.4%201.4L9%2019%2021%207l-1.4-1.4L9%2016.2z%22%2F%3E%3C%2Fsvg%3E)
+    background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23F0F0F0%22%20d%3D%22M9%2016.2L4.8%2012l-1.4%201.4L9%2019%2021%207l-1.4-1.4L9%2016.2z%22%2F%3E%3C%2Fsvg%3E)
       no-repeat center center;
     border-radius: 100%;
     background-size: 100%;
@@ -585,7 +586,7 @@ html {
   }
   nav:not([class]),
   nav[xx] {
-    background: #fff;
+    background: #F0F0F0;
     color: #2e3538;
     padding: 0 2rem;
     border-bottom: 1px solid #679;
@@ -667,7 +668,7 @@ html {
   nav[xx] menu {
     padding: 0;
     margin: 0;
-    background: #fff;
+    background: #F0F0F0;
     z-index: 2;
     text-align: left;
     white-space: nowrap;
@@ -794,7 +795,7 @@ html {
       transform: translate3d(100%, 0, 0);
       border-top: 1px solid #679;
       text-align: left;
-      background: #fff;
+      background: #F0F0F0;
       box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
       overflow-x: visible;
       overflow-y: auto;
@@ -910,7 +911,7 @@ html {
     z-index: 2;
     background: #454f54;
     border-radius: 3px;
-    color: #fff;
+    color: #F0F0F0;
     font-family: sans-serif;
     font-size: 1.2rem;
     line-height: 2.5;
@@ -1094,7 +1095,7 @@ html {
 /* Dark mode implementation ~> Implemented after looking at https://codepen.io/FlorinPop17/pen/XWWZYYG */
 .dark {
 	background-color: #0f0f10;
-  color: #fff;
+  color: #ded4d4;
 }
 
 grid.dark {
@@ -1140,7 +1141,7 @@ grid.dark {
 } */
 
 .label .ball {
-	background-color: #fff;
+	background-color: #F0F0F0;
 	border-radius: 50%;
 	position: absolute;
 	/* top: 2px; */
