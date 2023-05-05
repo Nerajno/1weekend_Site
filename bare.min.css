@@ -1096,6 +1096,12 @@ html {
 .dark {
 	background-color: #0f0f10;
   color: #ded4d4;
+
+}
+
+.dark nav  {
+	background-color: #0f0f10;
+  color: #ded4d4;
 }
 
 grid.dark {
@@ -1162,7 +1168,7 @@ grid.dark {
   border-width: thin;
 }
 
-#testDark.dark{
+.dark{
   background-color: #111;
   border-color: rgb(242, 239, 238);
   border-width: thin;
