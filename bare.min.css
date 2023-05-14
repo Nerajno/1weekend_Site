@@ -115,7 +115,7 @@ html {
     font-weight: 700;
     line-height: 1rem;
     margin: 0 1rem 1rem 0;
-    -webkit-appearance: none;
+    appearance: none;
   }
   [btn]:before,
   button:not([class]):before,
@@ -647,6 +647,7 @@ html {
     cursor: pointer;
     font-weight: 300;
   }
+
   @media (min-width: 50.1rem) {
     nav:not([class]) ul a:not(:only-child),
     nav[xx] ul a:not(:only-child) {
@@ -1142,17 +1143,11 @@ grid.dark {
   background-color: rgb(26, 21, 21);
 }
 
-/* .label .dark{
-  background-color: rgb(241, 237, 237);
-} */
 
 .label .ball {
 	background-color: #F0F0F0;
 	border-radius: 50%;
 	position: absolute;
-	/* top: 2px; */
-	/* left: 2px; */
-  /* bottom: 1.5px; */
   aspect-ratio: 1;
 	height: 20px;
 	transform: translateX(0px);
@@ -1186,14 +1181,14 @@ grid.dark {
 /* testing for padding the checkbx */
 #chkn .ball .fas{
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 /* CSS from the head of the page */
-section:not(:first-of-type) {
+/* section:not(:first-of-type) {
   border-left: 2px solid rgba(163, 41, 41, 0.3);
-}
+} */
 
 @media(max-width: 50rem) {
   section:not(:first-of-type) {
@@ -1304,4 +1299,8 @@ a {
 
 .ball {
   width: 20px;
+}
+
+body.dark nav ul {
+  color: #ded4d4 !important;
 }
