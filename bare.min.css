@@ -586,7 +586,7 @@ html {
   }
   nav:not([class]),
   nav[xx] {
-    background: #F0F0F0;
+    background: #fcfbff;;
     color: #2e3538;
     padding: 0 2rem;
     border-bottom: 1px solid #679;
@@ -1159,15 +1159,15 @@ grid.dark {
   background-color: rgb(27, 25, 25);
   transform: translateX(22px);
   border-style: solid;
-  border-color: rgb(242, 239, 238);
+  border-color: rgb(113, 112, 111);
   border-width: thin;
 }
 
 .dark{
   background-color: #111;
-  border-color: rgb(242, 239, 238);
-  border-width: thin;
-  border-style: solid;
+  /* border-color: rgb(242, 239, 238); */
+  /* border-width: thin;
+  border-style: solid; */
 }
 
 .label .fa-moon {
@@ -1301,6 +1301,6 @@ a {
   width: 20px;
 }
 
-body.dark nav ul {
+body.dark nav ul li a {
   color: #ded4d4 !important;
 }

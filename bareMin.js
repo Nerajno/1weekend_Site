@@ -29,11 +29,12 @@ window.addEventListener('scroll', setColor);
 
 // Js for dark mode ~> https://codepen.io/FlorinPop17/pen/XWWZYYG || Florin Pop
 const body = document.querySelector('body');
-const navbar = document.querySelector('nav');
+const navlinks = document.querySelectorAll('#linkTxt');
+
 
 const chk =  document.getElementById('chk');
 chk.addEventListener('change', ()=>{
     body.classList.toggle('dark');
-    // navbar.classList.toggle('dark');
+    navlinks.forEach(link => link.classList.toggle('dark'));
 });
 
