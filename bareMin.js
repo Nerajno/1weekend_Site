@@ -1,9 +1,8 @@
 // Original js 
-
 let color = '#DF9FA2'
 const sections = Array.from(document.querySelectorAll("section:not(:first-of-type)"));
 const fancyElement = document.querySelector(".heading-inside-text");
-const headerLink = document.querySelector("header > a");
+const headerLink = document.querySelector(" ul > li > a");
 
 // sets color based on scroll position
 function setColor(scrollEvent) {

@@ -68,7 +68,7 @@ html {
     display: inline-block;
     z-index: 1;
   }
-  p a:not([class]):not([btn]):before,
+  /* p a:not([class]):not([btn]):before,
   p a[xx]:not([btn]):before,
    ul a:not([nav]):not([btn]):before {
     content: "";
@@ -83,7 +83,7 @@ html {
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
     z-index: -1;
-  }
+  } */
   p a:not([class]):not([btn]):hover:before,
   p a[xx]:not([btn]):hover:before,
   ul a:not([nav]):not([btn]):hover:before {
@@ -584,7 +584,7 @@ html {
   ol[xx] ol {
     list-style: lower-alpha;
   }
-  nav:not([class]),
+  nav,
   nav[xx] {
     background: #fcfbff;;
     color: #2e3538;
@@ -593,7 +593,7 @@ html {
     z-index: 10;
     min-height: 4.4rem;
   }
-  nav:not([class])[fx],
+  nav [fx],
   nav[xx][fx] {
     background: rgba(255, 255, 255, 0.95);
     position: fixed;
@@ -602,31 +602,31 @@ html {
     right: 0;
     z-index: 11;
   }
-  /* nav:not([class]) label,
+  /* nav label,
   nav[xx] label {
     /* max-width: 90rem; */
     /* margin: auto; */
     /* display: block; 
   } */
-  nav:not([class]) label > input,
+  nav label > input,
   nav[xx] label > input {
     display: none;
   }
-  nav:not([class]) ul,
+  nav ul,
   nav[xx] ul {
     padding: 0 2rem;
     margin: 0;
     font-size: 0;
     text-align: right;
   }
-  nav:not([class]) ul li,
+  nav ul li,
   nav[xx] ul li {
     display: inline-block;
     font-size: 1.6rem;
   }
   @media (min-width: 50.1rem) {
-    nav:not([class]) ul li:hover menu,
-    nav:not([class]) ul menu:hover,
+    nav ul li:hover menu,
+    nav ul menu:hover,
     nav[xx] ul li:hover menu,
     nav[xx] ul menu:hover {
       visibility: visible;
@@ -636,7 +636,7 @@ html {
       pointer-events: auto;
     }
   }
-  nav:not([class]) ul a,
+  nav ul a,
   nav[xx] ul a {
     text-decoration: none;
     text-transform: none;
@@ -649,7 +649,7 @@ html {
   }
 
   @media (min-width: 50.1rem) {
-    nav:not([class]) ul a:not(:only-child),
+    nav ul a:not(:only-child),
     nav[xx] ul a:not(:only-child) {
       background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cpath%20d%3D%22M14.83%2016.42L24%2025.59l9.17-9.17L36%2019.25l-12%2012-12-12z%22%2F%3E%3C%2Fsvg%3E);
       background-repeat: no-repeat;
@@ -658,14 +658,14 @@ html {
       padding-right: 3rem;
     }
   }
-  nav:not([class]) ul a:hover,
+  nav ul a:hover,
   nav[xx] ul a:hover,
-  nav:not([class]) ul a:focus,
+  nav ul a:focus,
   nav[xx] ul a:focus {
     color: #679;
     border-color: #679;
   }
-  nav:not([class]) menu,
+  nav menu,
   nav[xx] menu {
     padding: 0;
     margin: 0;
@@ -676,7 +676,7 @@ html {
     min-width: 100%;
   }
   @media (min-width: 50.1rem) {
-    nav:not([class]) menu,
+    nav menu,
     nav[xx] menu {
       visibility: hidden;
       opacity: 0;
@@ -689,30 +689,30 @@ html {
       pointer-events: none;
     }
   }
-  nav:not([class]) menu menuitem,
+  nav menu menuitem,
   nav[xx] menu menuitem {
     display: block;
     border-left: 4px solid transparent;
   }
-  nav:not([class]) menu menuitem:hover,
+  nav menu menuitem:hover,
   nav[xx] menu menuitem:hover {
     border-color: #679;
     background-color: #f4f5f6;
   }
-  nav:not([class]) menu menuitem:hover a,
+  nav menu menuitem:hover a,
   nav[xx] menu menuitem:hover a {
     -webkit-transform: translate3d(0.5rem, 0, 0);
     transform: translate3d(0.5rem, 0, 0);
   }
-  nav:not([class]) menu menuitem a,
+  nav menu menuitem a,
   nav[xx] menu menuitem a {
     text-transform: none;
     padding: 0.5rem 2rem 0.5rem 1.6rem;
     border: none;
     font-size: 1.2rem;
   }
-  nav:not([class]) header:after,
-  nav:not([class]) header:before,
+  nav header:after,
+  nav header:before,
   nav[xx] header:after,
   nav[xx] header:before {
     content: "";
@@ -726,18 +726,18 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
   }
-  nav:not([class]) header:before,
+  nav header:before,
   nav[xx] header:before {
     background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cpath%20fill%3D%22%232e3538%22%20d%3D%22M6%2036h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z%22%2F%3E%3C%2Fsvg%3E);
   }
-  nav:not([class]) header:after,
+  nav header:after,
   nav[xx] header:after {
     background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cpath%20d%3D%22M38%2012.83L35.17%2010%2024%2021.17%2012.83%2010%2010%2012.83%2021.17%2024%2010%2035.17%2012.83%2038%2024%2026.83%2035.17%2038%2038%2035.17%2026.83%2024z%22%2F%3E%3C%2Fsvg%3E);
     opacity: 0;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
-  nav:not([class]) header a,
+  nav header a,
   nav[xx] header a {
     position: absolute;
     left: 2rem;
@@ -748,7 +748,7 @@ html {
     font-size: 1.6rem;
     text-decoration: none;
   }
-  nav:not([class]) header a img,
+  nav header a img,
   nav[xx] header a img {
     height: 2rem;
     vertical-align: middle;
@@ -759,7 +759,7 @@ html {
     body {
       padding-top: 4.4rem;
     }
-    nav:not([class]),
+    nav,
     nav[xx] {
       position: fixed;
       padding: 0;
@@ -767,7 +767,7 @@ html {
       left: 0;
       right: 0;
     }
-    nav:not([class]) header,
+    nav header,
     nav[xx] header {
       position: absolute;
       top: 0;
@@ -775,17 +775,17 @@ html {
       right: 0;
       bottom: 0;
     }
-    nav:not([class]) header:after,
-    nav:not([class]) header:before,
+    nav header:after,
+    nav header:before,
     nav[xx] header:after,
     nav[xx] header:before {
       display: block;
     }
-    nav:not([class]) label,
+    nav label,
     nav[xx] label {
       height: 4.4rem;
     }
-    nav:not([class]) label > ul,
+    nav label > ul,
     nav[xx] label > ul {
       position: fixed;
       top: 4.4rem;
@@ -801,38 +801,38 @@ html {
       overflow-x: visible;
       overflow-y: auto;
     }
-    nav:not([class]) label > ul li,
+    nav label > ul li,
     nav[xx] label > ul li {
       display: block;
       border-top: 1px solid #e3e6e8;
     }
-    nav:not([class]) label > ul a,
+    nav label > ul a,
     nav[xx] label > ul a {
       padding: 1rem 6rem 1rem 2rem;
       border: none;
     }
-    nav:not([class]) label input:checked ~ ul,
+    nav label input:checked ~ ul,
     nav[xx] label input:checked ~ ul {
       -webkit-transform: none;
       transform: none;
     }
-    nav:not([class]) label input:checked ~ header:before,
+    nav label input:checked ~ header:before,
     nav[xx] label input:checked ~ header:before {
       -webkit-transform: rotate(-180deg);
       transform: rotate(-180deg);
       opacity: 0;
     }
-    nav:not([class]) label input:checked ~ header:after,
+    nav label input:checked ~ header:after,
     nav[xx] label input:checked ~ header:after {
       -webkit-transform: none;
       transform: none;
       opacity: 1;
     }
-    nav:not([class]) label menu menuitem,
+    nav label menu menuitem,
     nav[xx] label menu menuitem {
       border-color: #e3e6e8;
     }
-    nav:not([class]) label menu a,
+    nav label menu a,
     nav[xx] label menu a {
       padding-left: 4rem;
     }
@@ -1304,4 +1304,3 @@ a {
 body.dark nav ul li a {
   color: #ded4d4 !important;
 }
-
