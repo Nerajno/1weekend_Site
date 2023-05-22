@@ -17,63 +17,80 @@
     <link href="./bare.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
-
     <script
       src="https://kit.fontawesome.com/b6674340a3.js"
       crossorigin="anonymous"
     ></script>
- </head>
+    <link href="./bare.min.css" rel="stylesheet" />
+  </head>
   <body>
-    <nav>
-      <label>
-        <span class="visually-hidden">Menu</span>
-        <input type="checkbox" name="nav-trigger" />
-      </label>
-      <header>
-        <a id="linkTxt" href="#"> Nerando Johnson</a>
-      </header>
-      <ul >
-        <li>
-          <a nav id="linkTxt" href="#skills">Skills</a>
-        </li>
-        <li>
-          <a nav id="linkTxt" href="#projects">Projects</a>
-        </li>
-        <li>
-          <a nav id="linkTxt" href="#confs">Talks</a>
-        </li>
-        <li>
-          <a nav id="linkTxt" href="#bio">Bio</a>
-        </li>
-        <li>
-          <a nav id="linkTxt" nav href="https://dev.to/nerajno" 
-             target="_blank" 
-             rel="noopener"
-            >Blog <i class="fas fa-user-edit" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a nav id="linkTxt" 
-            nav href="https://github.com/Nerajno"
-            target="_blank"
-            rel="noopener"
-            >Github <i class="fa fa-external-link" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a nav id="linkTxt" nav href="#contact">Contact</a>
-        </li>
-        <li>
-          <input type="checkbox" class="checkbox" id="chk" />
-          <label class="label" id="chkn" for="chk">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-            <div class="ball"></div>
-          </label>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarToggler"
+        aria-controls="navbarToggler"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand will-show" id="linkTxt" href="#Home">Nerando Johnson</a>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="linkTxt" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a nav id="linkTxt" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a nav id="linkTxt" href="#confs">Talks</a>
+          </li>
+          <li class="nav-item">
+            <a nav id="linkTxt" href="#bio">Bio</a>
+          </li>
+          <li class="nav-item">
+            <a
+              nav
+              id="linkTxt"
+              nav
+              href="https://dev.to/nerajno"
+              target="_blank"
+              rel="noopener"
+              >Blog <i class="fas fa-user-edit" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              nav
+              id="linkTxt"
+              nav
+              href="https://github.com/Nerajno"
+              target="_blank"
+              rel="noopener"
+              >Github <i class="fa fa-external-link" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a nav id="linkTxt" href="#contact">Contact</a> 
+            <!--  create a module that sends a message to my email -->
+          </li>
+          <li class="nav-item" id="darkModeToggle">
+            <input type="checkbox" class="checkbox" id="chk" />
+              <label class="label" id="chkn" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+              </label>
+          </li>
+        </ul>
+      </div>
     </nav>
     <main>
       <section>
@@ -84,7 +101,8 @@
         </h1>
 
         <p fs="l">
-          A fullstack trained software developer with DevOps skills based in Atlanta, Georgia
+          A fullstack trained software developer with DevOps skills based in
+          Atlanta, Georgia
         </p>
       </section>
       <hr id="skills" />
@@ -106,7 +124,7 @@
           </li>
           <li>
             Have published a small open source helper library for rendering HTML
-            from JavaScript objects. 
+            from JavaScript objects.
           </li>
         </ul>
         <div>
@@ -132,7 +150,8 @@
         <div>
           <span fs="l">
             <b>Tools</b>: Asana, Azure DevOps, Bitbucket, Cypress, Git, Github
-            Actions, GitHub, Gitlab, Jira, Netlify, NPM, WordPress( Template-based), Yarn.
+            Actions, GitHub, Gitlab, Jira, Netlify, NPM, WordPress(
+            Template-based), Yarn.
           </span>
           <ul ma="0">
             <li>
@@ -198,11 +217,14 @@
                 />
               </div>
               <p>
-                A proof of concept Authentication && CRUD Rails app. 
-                <a href="https://trapper-keepr.fly.dev/" target="_new" rel="noopener"
-                  >Visit Demo <i class="fa fa-external-link" aria-hidden="true"></i
-                    ></a>
-  
+                A proof of concept Authentication && CRUD Rails app.
+                <a
+                  href="https://trapper-keepr.fly.dev/"
+                  target="_new"
+                  rel="noopener"
+                  >Visit Demo
+                  <i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
               </p>
               <br />
               <b>It uses :</b>
@@ -224,9 +246,9 @@
               <p>
                 A website for GRAMMY-nominated folksinger John McCutcheon.
                 <a href="https://www.folkmusic.com" target="_new" rel="noopener"
-                  >Visit Website <i class="fa fa-external-link" aria-hidden="true"></i
-                    ></a
-                >
+                  >Visit Website
+                  <i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
               </p>
               <br />
               <b>My contribution:</b>
@@ -253,8 +275,9 @@
                   href="https://www.freelivetranscript.com"
                   target="_new"
                   rel="noopener"
-                  >Visit Website <i class="fa fa-external-link" aria-hidden="true"></i
-                    ></a>     
+                  >Visit Website
+                  <i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
               </p>
               <b>My contribution:</b>
               <ul ma="0" fs="s">
@@ -281,10 +304,9 @@
                   href="https://paratransitpal.carrd.co/"
                   target="_new"
                   rel="noopener"
-                  >Visit Website <i class="fa fa-external-link" aria-hidden="true"></i
-                    ></a
-                >
-
+                  >Visit Website
+                  <i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
               </p>
               <br />
 
@@ -330,9 +352,9 @@
                   href="https://vigilant-saha-304915.netlify.com/"
                   target="_new"
                   rel="noopener"
-                  >Visit Demo <i class="fa fa-external-link" aria-hidden="true"></i
-                    ></a
-                >
+                  >Visit Demo
+                  <i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
               </p>
               <b>My contribution:</b>
               <ul ma="0" fs="s">
@@ -512,26 +534,31 @@
       <section>
         <h2>Bio</h2>
         <p>
-          As a full-stack developer, I have served in a DevOps capacity while assisting a team of nine developers
-          on a proprietary mortgage web platform. Our team worked on new feature development in a modern Expo-based 
-          React/React Native SPA front-end codebase plus creation of: Node.js back-end, integration of middleware, 
-          new user workflows and adding functionality for 5,000 concurrent users..
+          As a full-stack developer, I have served in a DevOps capacity while
+          assisting a team of nine developers on a proprietary mortgage web
+          platform. Our team worked on new feature development in a modern
+          Expo-based React/React Native SPA front-end codebase plus creation of:
+          Node.js back-end, integration of middleware, new user workflows and
+          adding functionality for 5,000 concurrent users..
         </p>
         <p>
-          As Quality Assurance / Software Engineer with a local Atlanta firm, I was responsible for creating and 
-          reviewing JavaScript-based ad technologies for Cartoon Network and Adult Swim (Emmy Award Winner for 2019).
-          My strengths include problem solving, the ability to modify codebases, ability to work with multiple 
-          stakeholders to ensure that the work being done is understood and the expected solutions are delivered. 
-          Additional skills experience include: simplified documentation, Quality Assurance, and test strategies. 
-          Facilitating best practices in the software development life cycle, I am open to support my team in whichever 
-          way brings needed.
+          As Quality Assurance / Software Engineer with a local Atlanta firm, I
+          was responsible for creating and reviewing JavaScript-based ad
+          technologies for Cartoon Network and Adult Swim (Emmy Award Winner for
+          2019). My strengths include problem solving, the ability to modify
+          codebases, ability to work with multiple stakeholders to ensure that
+          the work being done is understood and the expected solutions are
+          delivered. Additional skills experience include: simplified
+          documentation, Quality Assurance, and test strategies. Facilitating
+          best practices in the software development life cycle, I am open to
+          support my team in whichever way brings needed.
         </p>
         <p>
           Before WarnerMedia Discovery, I interned at Mobile App Hero learning
           into the Expo React Native and Firebase stack, understanding the
           technical tooling and process required to develop a product, thus,
-          bringing value to customers. Other tech based experiences include being
-          an intern at
+          bringing value to customers. Other tech based experiences include
+          being an intern at
           <a href="https://bit.ly/3TvDO0j" target="_new" rel="noopener"
             >Ringer Consulting Group</a
           >
@@ -598,5 +625,20 @@
       </div>
     </main>
     <script src="bareMin.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
