@@ -1304,3 +1304,17 @@ a {
 body.dark nav ul li a {
   color: #ded4d4 !important;
 }
+
+.navbar-brand {
+  font-size: 1.25ems;
+  font-weight: 300;
+  padding: .5ems
+}
+
+.navbar-brand:visited {
+    color:black;
+    font-weight: 300;
+    padding-right: .5ems
+}
+
+
