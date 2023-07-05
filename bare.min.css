@@ -1,9 +1,9 @@
 html {
     font-family: sans-serif;
-    font-size: 12px; 
+    font-size: 12px;
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;
-    
+
   }
   *,
   :after,
@@ -33,7 +33,7 @@ html {
   a:hover {
     outline: 0;
   }
-  /* 
+  /*
   :not([class]) a {
     text-decoration-color: currentColor
   } */
@@ -606,7 +606,7 @@ html {
   nav[xx] label {
     /* max-width: 90rem; */
     /* margin: auto; */
-    /* display: block; 
+    /* display: block;
   } */
   nav label > input,
   nav[xx] label > input {
@@ -1110,7 +1110,7 @@ grid.dark {
   display: block;
   padding: 2rem;
   box-shadow: 0 1px 4px 0 rgb(223 213 213 / 92%);
-  border-radius: 2px; 
+  border-radius: 2px;
 }
 
 .checkbox{
@@ -1279,9 +1279,9 @@ a {
   font-weight: bold
 }
 
-.visually-hidden { 
+.visually-hidden {
   position: absolute !important;
-  height: 1px; 
+  height: 1px;
   width: 1px;
   overflow: hidden;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -1306,14 +1306,14 @@ body.dark nav ul li a {
 }
 
 .navbar-brand {
-  font-size: 1.25ems;
+  /* font-size: 1.25ems; */
   font-weight: 300;
   padding: .5ems
 }
 
 .navbar-brand:visited {
     color:black;
-    font-weight: 300;
+    /* font-weight: 300; */
     padding-right: .5ems
 }
 
