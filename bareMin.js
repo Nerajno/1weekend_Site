@@ -1,11 +1,11 @@
-// Original js 
+// Original js
 let color = '#DF9FA2'
 const sections = Array.from(document.querySelectorAll("section:not(:first-of-type)"));
 const fancyElement = document.querySelector(".heading-inside-text");
 const headerLink = document.querySelector(" ul > li > a");
 
 // sets color based on scroll position
-function setColor(scrollEvent) {
+function setColor() {
     const scrollPosition = window.scrollY;
     if (scrollPosition > 14) {
         if (!fancyElement.classList.contains("will-shrink"))
@@ -19,10 +19,9 @@ function setColor(scrollEvent) {
     sections.forEach(heading => {
         heading.style.borderLeftColor = color;
     });
-   
-    //TODO: Fix for this error message
+
     // sets the underline and bg of the links bare CSS styles nicely. Kind of brittle
-    document.styleSheets[0].rules[12].style.background = color;
+    document.styleSheets[0].cssRules[12].style.background = color;
 }
 window.addEventListener('scroll', setColor);
 
