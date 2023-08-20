@@ -1306,14 +1306,14 @@ body.dark nav ul li a {
 }
 
 .navbar-brand {
-  font-size: 1.25ems;
+  font-size: larger;
   font-weight: 300;
   padding: .5ems
 }
 
 .navbar-brand:visited {
     color:black;
-    font-weight: 300;
+    /* font-weight: 300; */
     padding-right: .5ems
 }
 
@@ -1322,6 +1322,10 @@ body.dark nav ul li a {
     float: none;
     text-align: left;
   }
+#darkModeToggle.nav-item{
+  padding: 0.8rem 2rem 0.4rem;
+}
+
 
 }
 
