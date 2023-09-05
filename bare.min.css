@@ -1317,8 +1317,18 @@ body.dark nav ul li a {
     padding-right: .5ems
 }
 
+@media screen and (max-width: 768px) {
+  .navbar .nav-item {
+    float: none;
+    text-align: left;
+  }
+}
+
 #darkModeToggle.nav-item{
   padding: 0.8rem 2rem 0.4rem;
 }
 
 
+/* .navbar-toggler{
+  color: #111;
+} */
