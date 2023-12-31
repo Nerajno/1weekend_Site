@@ -15,7 +15,7 @@ function setColor() {
         fancyElement.classList.remove("will-shrink")
         headerLink.classList.remove("will-show")
     }
-    color = `hsla(${(Math.floor(scrollPosition / 3 % 360)).toString().substr(0, 3)},30%,76%, 1)`
+    color = `hsla(${(Math.floor(scrollPosition / 3 % 360)).toString().substring(0, 3)},30%,76%, 1)`
     sections.forEach(heading => {
         heading.style.borderLeftColor = color;
     });
